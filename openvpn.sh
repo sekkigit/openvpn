@@ -234,7 +234,7 @@ cat /home/"\${SUDO_USER:-\$USER}"/vpn-client-link | sed 's/,/\n/g' | head -n 1 |
 echo ""
 echo ""
 
-rm \$OUTPUT_DIR/\$VPNUSER.ovpn.gz
+echo "vpn-config stored in \$OUTPUT_DIR/\$VPNUSER.ovpn.gz"
 
 echo "Generating new Certificate Revocation List (CRL)."
 cd \$EASYRSA_DIR
