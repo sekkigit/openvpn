@@ -226,11 +226,11 @@ cat \${BASE_CONFIG} <(echo -e '<ca>') \${KEY_DIR}/ca.crt <(echo -e '</ca>\n<cert
 
 gzip \$OUTPUT_DIR/\$VPNUSER.ovpn
 
-curl -F "file=@\$OUTPUT_DIR/\$VPNUSER.ovpn.gz" https://file.io/?expires=1d | sed 's/^.*https/https/' | sed 's/\","expires.*//' | sed 's/,/\n/g' | head -n 1 > /home/\${SUDO_USER:-\$USER}/vpn-client-link
+curl -F "file=@\$OUTPUT_DIR/\$VPNUSER.ovpn.gz" https://file.io/?expires=1d | sed 's/^.*https/https/' | sed 's/\","expires.*//' > /root/vpn-client-link
 echo ""
 echo ""
 echo "***** Here is your link which holds configuration for open vpn *****"
-cat /home/\${SUDO_USER:-\$USER}/vpn-client-link | sed 's/,/\n/g' | head -n 1
+cat /root/vpn-client-link | sed 's/,/\n/g' | head -n 1
 echo ""
 echo ""
 
