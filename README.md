@@ -1,13 +1,23 @@
-# Install OpenVPN
+# OpenVPN Installer
+### For Ubuntu 22.04 LTS (minimized install) and Ubuntu 20.04
 
 <p align="center">
   <img width="500" height="500" src="https://github.com/sekkigit/porfolio.sekiteh/blob/gh-pages/img/works/6.jpg?raw=true">
+</p>
+
+<p align="right">COPY
 </p>
 
 ```
 git clone https://github.com/sekkigit/openvpn.git openvpn && cd openvpn
 sudo bash openvpn.sh
 ```
+
+#### Install: 
+
+| Program | Description |
+| --- | --- |
+| OpenVPN | Create a vpn server with vpn-user. |
 
 <details><summary>Warning</summary>
 <p>
