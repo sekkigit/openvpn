@@ -226,8 +226,11 @@ cat \${BASE_CONFIG} <(echo -e '<ca>') \${KEY_DIR}/ca.crt <(echo -e '</ca>\n<cert
 
 gzip \$OUTPUT_DIR/\$VPNUSER.ovpn
 
+echo ""
 echo "***** Here is your link which holds configuration for open vpn *****"
+echo ""
 curl -F "file=@\$OUTPUT_DIR/\$VPNUSER.ovpn.gz" https://file.io/?expires=1d | sed 's/^.*https/https/' | sed 's/\","expires.*//'
+echo ""
 echo ""
 
 rm \$OUTPUT_DIR/\$VPNUSER.ovpn.gz
