@@ -5,7 +5,7 @@
   <img width="500" height="500" src="https://github.com/sekkigit/porfolio.sekiteh/blob/gh-pages/img/works/6.jpg?raw=true">
 </p>
 
-This is a OpenVPN installation that can be used with Ubuntu 20.04 (fully automated) and Ubuntu 22.04 LTS (PEM pass input needed), also create a vpn-user and send client config wia the one time link.
+This is a OpenVPN installation that can be used with Ubuntu 20.04 (fully automated) and Ubuntu 22.04 LTS (PEM pass input needed), also create a vpn-user and send client config via the one time link.
 
 <p align="right">COPY
 </p>
