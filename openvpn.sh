@@ -2,10 +2,10 @@
 
 #VAR
 ADMINUSER="firstname-lastname"
-COUNTRY="Croatia"
-CITY="Rijeka"
-ORG="SekiTEH"
-EMAIL="info@sekiteh.xyz"
+COUNTRY="country"
+CITY="citya"
+ORG="org"
+EMAIL="email"
 PUBIP=$(curl ifconfig.me)
 NETADAPT=$(ip route | grep default | sed -e "s/^.*dev.//" -e "s/.proto.*//")
 COMPANY="name"

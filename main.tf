@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket         = "convect-sandbox-terraform-state"
-    dynamodb_table = "convect-sandbox-terraform-state"
+    bucket         = "terraform-state"
+    dynamodb_table = "terraform-state"
     key            = "integration-components/vpn"
     region         = "eu-central-1"
     encrypt        = true
@@ -18,7 +18,7 @@ module "baseTags" {
   source      = "../terraform-modules/tags"
   project     = local.project
   application = "eks"
-  owner       = "Convect"
+  owner       = "abc"
   team        = "DevOps"
   env         = local.env
   domain      = local.domain
